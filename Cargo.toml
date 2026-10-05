@@ -1,0 +1,15 @@
+[package]
+edition = "2024"
+name = "mpu6500"
+version = "0.1.0"
+authors = ["jbrilha <joao.brilha2001@gmail.com>"]
+
+[features]
+default = []
+defmt = ["dep:defmt"]
+
+[dependencies]
+defmt = { version = "1.1", optional = true }
+embedded-hal = "1.0.0"
+embedded-hal-async = "1.0.0"
+micromath = "2.1.0"
